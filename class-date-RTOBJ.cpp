@@ -18,14 +18,14 @@ class Date{
     {
         Date tempd;
         tempd.Day = tempd.month = tempd.year = 0;
-        tempd.Day = Day + D1.Day;
+        tempd.Day += Day + D1.Day;
         if(tempd.Day >= 30){
-            tempd.Day = tempd.Day - 30;
+            tempd.Day -= 30;
             tempd.month ++;
         }
-        tempd.month = month + D1.month;
-        if(tempd.month >= 30){
-            tempd.month = tempd.month - 30;
+        tempd.month += month + D1.month;
+        if(tempd.month >= 12){
+            tempd.month -= 12;
             tempd.year ++;
         }
         tempd.year += year + D1.year;
@@ -43,7 +43,7 @@ class Date{
         }
         tempd.month = month - D1.month;
         if(tempd.month < 0){
-            tempd.month = tempd.month + 30;
+            tempd.month = tempd.month + 12;
             tempd.year --;
         }
         tempd.year -= year - D1.year;
@@ -51,7 +51,7 @@ class Date{
     }
 
     void displayDate(){
-        cout << "year: " << year << " month: " << month << "Days: "<<Day<< endl;
+        cout << "year: " << year << " | month: " << month << " | Days: "<<Day<< endl;
     }
 };
 
