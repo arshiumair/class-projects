@@ -58,9 +58,13 @@ class Date{
 int main()
 {
     Date D1, D2, D3;
-
-    D1.setDate(10, 2,12);
-    D2.setDate(30, 10,45);
+    cout << "Enter the first date (dd/mm/yyyy): " << endl;
+    int d, m, y;
+    cin >> d >> m >> y;
+    D1.setDate(d, m, y);
+    cout << "Enter the second date (dd/mm/yyyy): " << endl;
+    cin >> d >> m >> y;
+    D2.setDate(d, m, y);
     D3 = D1.add(D2);
     D3.displayDate();
     getch();
