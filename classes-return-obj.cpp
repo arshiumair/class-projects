@@ -25,6 +25,19 @@ class Distance{
         return tempd;
     }
 
+    Distance minus(Distance d1)
+    {
+        Distance tempd;
+        tempd.inch = tempd.feet = 0;
+        tempd.inch = inch - d1.inch;
+        if(tempd.inch < 0){
+            tempd.inch = tempd.inch + 12;
+            tempd.feet --;
+        }
+        tempd.feet += feet + d1.feet;
+        return tempd;
+    }
+
     void displayDistance(){
         cout << "Feet: " << feet << " Inch: " << inch << endl;
     }
