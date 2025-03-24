@@ -1,6 +1,6 @@
 # Practice CPP projects of the class assignments
-Here I am prcaticing my class homework. <br>
-Don't mess with my work. <br>
-thanks <br>
+Hi there ! I am prcaticing on my own projects. <br>
+Please don't make any inconvenience for me. <br>
+Thanks for your cooperation.<br>
 regards: 
 Author
