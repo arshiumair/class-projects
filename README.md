@@ -20,5 +20,5 @@ You can find stuff regarding the following Topics.
 <li> Abstract classes
 </ol>
 
-regards: <br>
+Regards: <br>
 Author
