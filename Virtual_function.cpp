@@ -22,13 +22,11 @@ class B: public A  // Derived class
     public:
     void get()
     {   
-        A::get();  // Call base class get() to get i
         cout << "Enter j: ";
         cin >> j;
     }
     void display()
     {   
-        A::display();  // Call base class display() to display i
         cout << "j: " << j << endl;
     }
 };
