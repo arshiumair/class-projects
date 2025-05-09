@@ -13,16 +13,6 @@ class Time
     }
      
     Time() {}
-
-    void get() 
-    {
-        cout << "Enter hour: ";
-        cin >> hour;
-        cout << "Enter minute: ";
-        cin >> minute;
-        cout << "Enter second: ";
-        cin >> second;
-    }
     void display() 
     
     {
@@ -76,9 +66,7 @@ class Time
 
 int main()
 {
-    Time t1, t2, t3, t4;
-    t1.get();
-    t2.get();
+    Time t1(50,45,4), t2(20, 40, 3), t3, t4;
     t3 = t1.add(t2);
     t4 = t1.sub(t2);
     cout << "Addition of time: " << endl;
