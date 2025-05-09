@@ -11,18 +11,13 @@ class Distance
         feet = b;
     }
     
-    Distance() {}
-
-    void get() 
-    {
-        cout << "Enter feet: ";
-        cin >> feet;
-        cout << "Enter inch: ";
-        cin >> inch;
+    Distance() {
+        inch = 0;
+        feet = 0;
     }
     void display() 
     {
-        cout << "Distance is: " << feet << " \nfeet and " << inch << " \ninch" << endl;
+        cout << "Distance is: " << feet << " : " << inch << endl;
     }
 
     Distance add(Distance d) 
@@ -55,9 +50,7 @@ class Distance
 
 int main()
 {
-    Distance d1, d2, d3, d4;
-    d1.get();
-    d2.get();
+    Distance d1(8, 6), d2(3, 5), d3, d4;
     d3 = d1.add(d2);
     d4 = d1.sub(d2);
     cout << "Addition of two distances: " << endl;
